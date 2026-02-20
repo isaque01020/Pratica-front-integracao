@@ -5,9 +5,10 @@ Projeto em desenvolvimento 🚧
 Aplicação frontend para prática de React e integração com API REST.
 
 Back-end disponível em:
-```
+
 https://github.com/isaque01020/back-integracao-react/tree/main
-```
+
+---
 
 ## Status
 

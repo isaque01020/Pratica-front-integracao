@@ -1,0 +1,37 @@
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem;
+}
+
+.Formulario h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.Formulario p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.TextoFormulario{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.EntradaForms{
+    border-radius: 7px;
+    border: 1px solid;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.BotaoForms{
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 18px;
+    border: none;
+    background-color: #2FB3FF;
+    font-weight: bold;
+    cursor: pointer;
+}

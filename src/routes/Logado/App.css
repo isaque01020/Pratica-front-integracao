@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.LogadoContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContainerLogado{
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 8px 8px 10px #8888;
+}
+
+.ContainerLogado p{
+  font-size:40px; 
+  font-weight: bold;
+}

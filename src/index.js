@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Logado from './routes/Logado/Logado';
 import RotaProtegida from './routes/RotaProtegida';
+import Cadastrar from './routes/Cadastrar';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Login/> } />
+        <Route path="/cadastrar" element={ <Cadastrar/> } />
         <Route path="/logado" element={
           <RotaProtegida>
             <Logado/>

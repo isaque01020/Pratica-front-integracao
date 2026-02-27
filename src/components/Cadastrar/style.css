@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ContainerCadastro{
+    display: flex;
+    flex-direction: column;
+    padding: 2.8rem;
+}
+
+.TituloPage{
+    font-weight: bolder;
+}
+
+.FormsCadastro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 22rem;
+    /* gap: 0.6rem; */
+}
+
+.TextoForms{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 26px;
+}
+
+.FormsEntrada{
+    width: 19rem;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 0.5rem;
+    /* margin-bottom: 20px; */
+}
+
+/* #Senha{
+    background-image: url(./assets/OlhoAberto.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 2.19em;
+} */
+
+.SenhaReq{
+    margin: 15px 0 0 40px;
+    color: gray;
+}
+
+.FormsEnviar{
+    background-color: #2FB3FF;
+    border: none;
+    border-radius: 18px;
+    width: 19rem;
+    font-weight: bolder;
+    padding: 0.8rem;
+    cursor: pointer;
+    margin-top: 8.5rem;
+}
+
+.EntradaSenha{
+    position: relative;
+}
+
+#Senha{
+    padding-right: 40px;
+}
+
+.OlhoBotao{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 265px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.OlhoImagem{
+    width: 2rem;
+}

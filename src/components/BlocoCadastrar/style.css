@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.CadastreseContainer{
+    background-color: white;
+    width: 56.25rem;
+    height: 32.5rem;
+    max-height: 32.5rem;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 8px 8px 10px #8888;
+    overflow: hidden;
+}

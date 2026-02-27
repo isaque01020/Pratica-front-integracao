@@ -36,7 +36,7 @@ function Forms() {
 
                 <label className="TextoFormulario">Senha</label>
                 <input 
-                    type="text" 
+                    type="password" 
                     className="EntradaForms" 
                     placeholder="Senha"
                     onChange={(value => {setSenha(value.target.value)})}

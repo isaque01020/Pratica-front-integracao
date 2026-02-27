@@ -36,6 +36,7 @@ function Cadastrar() {
         }
     }
 
+    
     return(
         <div className="ContainerCadastro">
             <h1 className="TituloPage">Cadastro</h1>

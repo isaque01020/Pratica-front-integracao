@@ -22,6 +22,24 @@ function Cadastrar() {
     const [email, setEmail] = useState("");
     const [tel, setTel] = useState("");
     const [cpf, setCpf] = useState("");
+    const [phoneInput, setPhoneInput] = useState("");
+
+    function formataPhone(valor) {
+        if(valor.length === 2) {
+            let valorFormatado = "(" + valor;
+            setPhoneInput(valorFormatado);
+        }else if(valor.length === 4) {
+            let valorFormatado =  phoneInput + ")" + valor.split('')[valor.length-1];
+            setPhoneInput(valorFormatado);
+        }else if(valor.length === 9) {
+            let valorFormatado = valor + "-";
+            setPhoneInput(valorFormatado);
+        } else{
+            setPhoneInput(valor);
+        }
+    }
+
+
 
     async function criaUser(e) {
         e.preventDefault();
@@ -70,21 +88,23 @@ function Cadastrar() {
                         id="Senha"
                         onChange={(e) => {setSenha(e.target.value)}}
                     />
-                    <button className="OlhoBotao" onClick={() => setExibeSenha(!exibeSenha)}>
+                    <div className="OlhoBotao" onClick={() => setExibeSenha(!exibeSenha)}>
                         <img 
                             src={exibeSenha ? OlhoAberto : OlhoFechado} 
                             alt="Símbolo olho" 
                             className="OlhoImagem"/>
-                    </button>
+                    </div>
                 </div>
                 <ul className="SenhaReq">
                     <li>Minímo 8 caracteres</li>
                     <li>Um caractere especial</li>
                     <li>Um digíto númerico</li>
+                    <li>Um caractere maiúsculo</li>
                 </ul>
 
                 <label className="TextoForms">Telefone</label>
                 <input 
+                    
                     className="FormsEntrada"
                     type="text" 
                     id="phone" 
@@ -93,7 +113,11 @@ function Cadastrar() {
                     // pattern="(([0-9]{2}))([9]{1})?([0-9]{4})([0-9]{4})"
                     title="Número de telefone precisa ser no formato (99) 9999-9999" 
                     required="required" 
-                    onChange={(e) => {setTel(e.target.value)}}
+                    value={phoneInput}
+                    onChange={(e) => {
+                        formataPhone(e.target.value)
+                        setTel(e.target.value)
+                    }}
                 />
                 
                 <label className="TextoForms">CPF</label>
